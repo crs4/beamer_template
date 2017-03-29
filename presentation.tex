@@ -1,0 +1,63 @@
+
+%
+% Sample beamer presentation.
+% You can start your presentation from here.
+%
+
+\documentclass[xcolor=dvipsnames]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+\usetheme{CRS4}
+
+%%%%% norm command
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+\title{Your title}
+\author[your.email@crs4.it]{Your name}
+\institute[CRS4]{Your Group\\
+\vspace{1em}
+	\includegraphics[width=3cm]{img/CRS4-colori.pdf}}%
+\date{\today}
+
+\begin{document}
+
+\AtBeginSection[]
+{
+   \begin{frame}
+		 \frametitle{Section}
+		 \begin{block}{}
+			 \begin{center}
+				 \Large\insertsection
+			 \end{center}
+		 \end{block}
+   \end{frame}
+}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Intro}
+
+\begin{frame}{Your slide}
+	\begin{block}{Block title}
+		\begin{itemize}
+			\item Stuff in block
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{}
+		Block without title
+	\end{block}
+
+	\begin{block}{Do continue on your own\ldots}
+		Beamer user's guide:
+		\url{http://www.tex.ac.uk/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf}
+	\end{block}
+\end{frame}
+
+
+\end{document}
