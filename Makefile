@@ -5,7 +5,7 @@
 # Makefile for my wonderful presentation
 #
 # Makes several assumptions:
-# * your presentation is in a file called presentation.tex
+# * your presentation is in a file called presentation.tex (change TEXFILE otherwise)
 # * you want to use pdflatex
 # * your images are in ./img
 #
@@ -46,7 +46,7 @@ all: pdf
 
 pdf: $(Basename).pdf
 
-presentation.pdf: images $(TEXFILE)
+$(Basename).pdf: images $(TEXFILE)
 	@echo "########################## Making $@"
 	pdflatex $(Basename)
 	pdflatex $(Basename)
